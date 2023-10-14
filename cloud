@@ -1,3 +1,4 @@
-trojan://01586580-677b-11ee-b1ac-1239d0255272@104.16.53.111:443?path=%2Fhowdy&security=tls&host=sg-2.test3.net&type=ws&sni=sg-2.test3.net#SG+AMP+1
-trojan://fbddcf90-6766-11ee-95c7-1239d0255272@104.16.53.111:443?path=%2Fhowdy&security=tls&host=sg-2.test3.net&type=ws&sni=sg-2.test3.net#SG+AMP+2
-trojan://42c05d00-677b-11ee-9848-1239d0255272@104.16.53.111:443?path=%2Fhowdy&security=tls&host=sg-2.test3.net&type=ws&sni=sg-2.test3.net#SG+AMP+3
+trojan://c5302e00-6a98-11ee-bb5f-1239d0255272@104.16.53.111:443?path=%2Fhowdy&security=tls&host=sg-2.test3.net&type=ws&sni=sg-2.test3.net#SG+AMP
+vless://a65fd020-6042-4ee8-b647-1195f5f2ab81@104.16.53.111:80?path=%2Fvless-ws&security=none&encryption=none&host=vless-ikd-id01.globalssh.xyz&type=ws&sni=vless-ikd-id01.globalssh.xyz#IKD
+vless://697efc6a-9326-423d-b4bf-3bba96aa55aa@104.16.53.111:80?path=%2Fvless-ws&security=none&encryption=none&host=vless-ovh-sg02.globalssh.xyz&type=ws&sni=vless-ovh-sg02.globalssh.xyz#SG+OVH+1
+vless://20429fa6-8629-44fa-a6e4-84fc9f7fb971@104.16.53.111:80?path=%2Fvless-ws&security=none&encryption=none&host=vless-ovh-sg01.globalssh.xyz&type=ws&sni=vless-ovh-sg01.globalssh.xyz#SG+OVH+2
