@@ -198,7 +198,7 @@
       "type": "trojan",
       "server": "104.16.143.190",
       "server_port": 443,
-      "password": "21eb8b5ba3be45fb",
+      "password": "8de6911517030934",
       "multiplex": {
         "enabled": false,
         "protocol": "smux",
