@@ -110,6 +110,7 @@
         "ID%230008",
         "ID#0009",
         "ID%230010",
+        "ID#0011",
         "ID%230012"
       ]
     },
@@ -128,6 +129,7 @@
         "ID%230008",
         "ID#0009",
         "ID%230010",
+        "ID#0011",
         "ID%230012"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
@@ -252,7 +254,7 @@
       "type": "vless",
       "server": "104.16.143.190",
       "server_port": 80,
-      "uuid": "e0c78882-cb70-4c7b-851e-6b97cf32bddd",
+      "uuid": "f6dd8dbe-2580-4740-803d-29763432855a",
       "flow": "",
       "packet_encoding": "xudp",
       "multiplex": {
@@ -429,6 +431,32 @@
       "transport": {
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
+        "headers": {
+          "Host": "cpanel.iptunnels.com"
+        },
+        "max_early_data": 0,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      },
+      "domain_strategy": "ipv4_only"
+    },
+    {
+      "tag": "ID#0011",
+      "type": "vmess",
+      "server": "104.16.143.190",
+      "server_port": 80,
+      "uuid": "6b7d5395-d1e9-4fa9-abcd-28832658bc06",
+      "security": "auto",
+      "alter_id": 0,
+      "global_padding": false,
+      "authenticated_length": true,
+      "multiplex": {
+        "enabled": false,
+        "protocol": "smux",
+        "max_streams": 32
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
         "headers": {
           "Host": "cpanel.iptunnels.com"
         },
