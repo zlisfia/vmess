@@ -2,6 +2,7 @@ vmess://eyJhZGQiOiJydW5jbG91ZC1zZGMuYXBhc2loLmlkIiwiYWlkIjoiMCIsImFscG4iOiIiLCJm
 vmess://eyJhZGQiOiIxMDQuMTcuNzAuMjA2IiwiYWlkIjoiMCIsImFscG4iOiIiLCJmcCI6IiIsImhvc3QiOiJydW5jbG91ZC1zZGMuYXBhc2loLmlkIiwiaWQiOiI4ZDAzYTJmYS1jMGVlLTQ4MmItYWI2MS0yZWYwZmZkMDQxNmEiLCJuZXQiOiJ3cyIsInBhdGgiOiIvYnV5LXZtZXNzLXdzLXBtLXRlbGVncmFtLWF0LXN5bnJpY2hhIiwicG9ydCI6IjgwIiwicHMiOiJWVklQIENETiIsInNjeSI6ImF1dG8iLCJzbmkiOiIiLCJ0bHMiOiIiLCJ0eXBlIjoiIiwidiI6IjIifQ==
 trojan://1d68806c-ed28-4d93-8a3b-d486f04a69d2@trojan-sg01.globalssh.xyz:443?path=%2Ftrojan-ws&security=tls&host=shopeemobile.com&type=ws&sni=shopeemobile.com#SG+Trojan
 trojan://d739bb60-e469-11ee-b672-1239d0255272@sg-4.test3.net:443?path=%2Fhowdy&security=tls&host=shopeemobile.com&type=ws&sni=shopeemobile.com#SG+Melb
+vless://24f1fed0-5bf9-4e51-ad0e-cb5c4672c9f3@id1vless.ipservers.xyz:443?path=%2Fjagoanssh&security=tls&encryption=none&host=id1vless.ipservers.xyz&type=ws&sni=shopeemobile.com#Indo+Jago
 vless://e2443e49-e0ce-4628-808f-76469b53cf66@104.17.70.206:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=net25.zxv.biz.id&fp=randomized&type=ws&sni=net25.zxv.biz.id#SG+GCore
 vless://fccdaaae-af39-41a7-9fde-fd32a48278cf@104.17.70.206:80?path=%2Facumalaka&security=none&encryption=none&host=sg2.godviper.my.id&type=ws#DO
 vless://e2443e49-e0ce-4628-808f-76469b53cf66@104.17.70.206:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=x6.merkuri.cloud&fp=randomized&type=ws&sni=x6.merkuri.cloud#SG+OVH
