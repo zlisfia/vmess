@@ -5,15 +5,17 @@
     "timestamp": true
   },
   "experimental": {
+    "cache_file": {
+      "enabled": true,
+      "path": "cache.db"
+    },
     "clash_api": {
       "external_controller": "0.0.0.0:9090",
       "external_ui": "yacd",
       "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
       "external_ui_download_detour": "Internet",
       "secret": "",
-      "default_mode": "rule",
-      "store_selected": true,
-      "cache_file": "clash.db"
+      "default_mode": "rule"
     }
   },
   "dns": {
@@ -51,6 +53,13 @@
         "rewrite_ttl": 20
       },
       {
+        "domain_suffix": [
+          "runcloud-sdc.apasih.id"
+        ],
+        "server": "direct-dns",
+        "rewrite_ttl": 20
+      },
+      {
         "network": "udp",
         "port": 443,
         "server": "block-dns",
@@ -64,6 +73,16 @@
       {
         "outbound": "Best Latency",
         "server": "Best Latency-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "direct",
+        "server": "direct-dns",
+        "rewrite_ttl": 20
+      },
+      {
+        "outbound": "any",
+        "server": "direct-dns",
         "rewrite_ttl": 20
       }
     ],
@@ -99,108 +118,24 @@
       "tag": "Internet",
       "outbounds": [
         "Best Latency",
-        "ty10.troublesignal.my.id",
-        "ty11.troublesignal.my.id",
-        "ID%230001",
-        "ID#0002",
-        "ID%230003",
-        "ID%230004",
-        "ID#0005",
-        "ID%230006",
-        "ID%230008",
-        "ID#0009",
-        "ID%230010",
-        "ID#0011",
-        "ID%230012"
+        "SDC+Premium"
       ]
     },
     {
       "type": "urltest",
       "tag": "Best Latency",
       "outbounds": [
-        "ty10.troublesignal.my.id",
-        "ty11.troublesignal.my.id",
-        "ID%230001",
-        "ID#0002",
-        "ID%230003",
-        "ID%230004",
-        "ID#0005",
-        "ID%230006",
-        "ID%230008",
-        "ID#0009",
-        "ID%230010",
-        "ID#0011",
-        "ID%230012"
+        "SDC+Premium"
       ],
       "url": "https://detectportal.firefox.com/success.txt",
       "interval": "1m0s"
     },
     {
-      "tag": "ty10.troublesignal.my.id",
-      "type": "vless",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "uuid": "f2298581-16d6-4c42-907d-3db31b64c38a",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ty10.troublesignal.my.id",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "ty10.troublesignal.my.id"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ty11.troublesignal.my.id",
-      "type": "vless",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "uuid": "f2298581-16d6-4c42-907d-3db31b64c38a",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "ty11.troublesignal.my.id",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2048",
-        "headers": {
-          "Host": "ty11.troublesignal.my.id"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230001",
+      "tag": "SDC+Premium",
       "type": "trojan",
-      "server": "104.16.143.190",
+      "server": "runcloud-sdc.apasih.id",
       "server_port": 443,
-      "password": "8de6911517030934",
+      "password": "192b36701510c071",
       "multiplex": {
         "enabled": false,
         "protocol": "smux",
@@ -208,7 +143,7 @@
       },
       "tls": {
         "enabled": true,
-        "server_name": "jala.iptunnels.com",
+        "server_name": "cvs-deo.shopeemobile.com",
         "insecure": true,
         "disable_sni": false
       },
@@ -216,273 +151,7 @@
         "type": "ws",
         "path": "/buy-trojan-ws-pm-telegram-at-synricha",
         "headers": {
-          "Host": "jala.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID#0002",
-      "type": "vmess",
-      "server": "104.16.143.190",
-      "server_port": 80,
-      "uuid": "772ce64c-61b4-41fb-b169-bdc66ac537e1",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "jala.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230003",
-      "type": "vless",
-      "server": "104.16.143.190",
-      "server_port": 80,
-      "uuid": "f6dd8dbe-2580-4740-803d-29763432855a",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vless-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "jala.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230004",
-      "type": "trojan",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "password": "26ab771e94770cb9",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jala.iptunnels.com",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "buy-trojan-grpc-pm-telegram-at-synricha",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s",
-        "permit_without_stream": false
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID#0005",
-      "type": "vmess",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "uuid": "c03ee5ce-940b-4160-abdf-825a4079bb67",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jala.iptunnels.com",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "buy-vmess-grpc-pm-telegram-at-synricha",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s",
-        "permit_without_stream": false
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230006",
-      "type": "vless",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "uuid": "69dc2853-21f4-4180-afbd-01bff45916e7",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jala.iptunnels.com",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "buy-vless-grpc-pm-telegram-at-synricha",
-        "idle_timeout": "15s",
-        "ping_timeout": "15s",
-        "permit_without_stream": false
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230008",
-      "type": "trojan",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "password": "3c9d7be2f19dc127",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "jala.iptunnels.com",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "jala.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID#0009",
-      "type": "vmess",
-      "server": "104.16.143.190",
-      "server_port": 80,
-      "uuid": "4ecf4d14-a2a7-4e32-af02-d5ab940689be",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "jala.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230010",
-      "type": "trojan",
-      "server": "104.16.143.190",
-      "server_port": 443,
-      "password": "ed6caa4105665be9",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "tls": {
-        "enabled": true,
-        "server_name": "cpanel.iptunnels.com",
-        "insecure": true,
-        "disable_sni": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-trojan-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "cpanel.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID#0011",
-      "type": "vmess",
-      "server": "104.16.143.190",
-      "server_port": 80,
-      "uuid": "6b7d5395-d1e9-4fa9-abcd-28832658bc06",
-      "security": "auto",
-      "alter_id": 0,
-      "global_padding": false,
-      "authenticated_length": true,
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vmess-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "cpanel.iptunnels.com"
-        },
-        "max_early_data": 0,
-        "early_data_header_name": "Sec-WebSocket-Protocol"
-      },
-      "domain_strategy": "ipv4_only"
-    },
-    {
-      "tag": "ID%230012",
-      "type": "vless",
-      "server": "104.16.143.190",
-      "server_port": 80,
-      "uuid": "686cc9ca-e7ed-417a-8185-e7334c45555a",
-      "flow": "",
-      "packet_encoding": "xudp",
-      "multiplex": {
-        "enabled": false,
-        "protocol": "smux",
-        "max_streams": 32
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/buy-vless-ws-pm-telegram-at-synricha",
-        "headers": {
-          "Host": "cpanel.iptunnels.com"
+          "Host": "runcloud-sdc.apasih.id"
         },
         "max_early_data": 0,
         "early_data_header_name": "Sec-WebSocket-Protocol"
@@ -523,4 +192,3 @@
       }
     ]
   }
-}
