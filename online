@@ -1,3 +1,6 @@
 trojan://192b36701510c071@runcloud-sdc.apasih.id:443?path=%2Fbuy-trojan-ws-pm-telegram-at-synricha&security=tls&host=runcloud-sdc.apasih.id&type=ws&sni=cf.shopee.co.id.cloudscdn.net#SDC+Premium
 vless://f2298581-16d6-4c42-907d-3db31b64c38a@ty11.troublesignal.my.id:443?path=%2F%3Fed%3D2048&security=tls&encryption=none&host=ty11.troublesignal.my.id&type=ws&sni=cf.shopee.co.id.cloudscdn.net#ID+Public
 vless://fccdaaae-af39-41a7-9fde-fd32a48278cf@vipernt.uchihaudin.biz.id:443?path=*&security=tls&encryption=none&host=vipernt.uchihaudin.biz.id&fp=randomized&type=ws&sni=cf.shopee.co.id.cloudscdn.net#Gatau
+vless://b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7@quiz.int.vidio.com:443?path=%2Fvless-ws&security=tls&encryption=none&host=sg1.v-less.biz.id&fp=randomized&type=ws&sni=sg1.v-less.biz.id#Digitalocean%2C+LLC+%28SG%29
+vless://b0cb1b0b-f5ba-4ca4-a587-cfe48126bff7@quiz.int.vidio.com:80?path=%2Fvless-ws&security=none&encryption=none&host=sg1.v-less.biz.id&type=ws#Digitalocean%2C+LLC+%28SG%29+80
+vless://fccdaaae-af39-41a7-9fde-fd32a48278cf@quiz.int.vidio.com:443?path=*&security=tls&encryption=none&host=sg2.adminviper5.workers.dev&fp=randomized&type=ws&sni=sg2.adminviper5.workers.dev#OVH+%28SG%29
